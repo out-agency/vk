@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="30px" viewBox="0 0 20 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>assets/arrow-down</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="current" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mobile" transform="translate(-150.000000, -515.000000)" fill="#FFFFFF">
+            <path d="M164.172611,539.785999 C163.74465,540.132815 163.059914,540.046111 162.631954,539.61259 C162.289586,539.17907 162.375178,538.485437 162.803138,538.051916 L170.934379,531.115588 L146.112696,531.115588 C145.513552,531.115588 145,530.595363 145,529.988434 C145,529.381505 145.513552,528.947985 146.112696,528.947985 L170.934379,528.947985 L162.803138,521.924952 C162.375178,521.578135 162.289586,520.884502 162.631954,520.450982 C163.059914,519.930757 163.74465,519.844053 164.172611,520.277574 L174.614836,529.208097 C175.128388,529.641618 175.128388,530.421955 174.614836,530.855475 L164.172611,539.785999 Z" id="assets/arrow-down" transform="translate(160.000000, 530.000000) rotate(-270.000000) translate(-160.000000, -530.000000) "></path>
+        </g>
+    </g>
+</svg>

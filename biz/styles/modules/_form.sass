@@ -1,0 +1,141 @@
+.form__wrapper
+  margin-bottom: 200px
+  @media screen and (max-width: $screen-xs-max)
+    margin-bottom: 60px
+
+.form__container
+  padding: 80px 0
+  background-color: $brand-gray-light
+  @media screen and (max-width: $screen-xs-max)
+    padding: 50px 0
+
+.form__block__title
+  font:
+    size: 24px
+    weight: 600
+  line-height: 1.3em
+  margin-bottom: 6px
+  @media screen and (max-width: $screen-xs-max)
+    font-size: 16px
+    line-height: 22px
+    text-align: center
+
+.form__block__text
+  font:
+    size: 20px
+    weight: 400
+  line-height: 1.3em
+  margin-bottom: 70px
+  color: $text-color-light
+  @media screen and (max-width: $screen-xs-max)
+    font-size: 16px
+    line-height: 22px
+    text-align: center
+    margin-bottom: 25px
+
+.form__curve
+  height: $screens-curve-height
+  background:
+    repeat: no-repeat
+    position: center top
+    size: cover
+    image: url('../images/screens-curve.svg')
+  text-align: center
+  margin:
+    top: -1px
+    bottom: 0
+  @media screen and (max-width: $screen-xs)
+    background-size: auto $screens-curve-height/3
+    height: $screens-curve-height/3
+
+.form__curve--top
+  @extend .form__curve
+  transform: rotate(180deg)
+  margin:
+    top: 0
+    bottom: -1px
+
+.screens__content__container
+  @extend %content-container-horizontal
+
+.form__form
+  @extend .form-inline
+  display: inline-block
+
+.btn-primary--rounded
+  @extend .btn
+  +button-variant(#fff, $vk-brand-blue, $vk-brand-blue)
+  display: inline-block
+  box-sizing: border-box
+  max-width: 330px
+  padding: 14px 36px 10px 36px
+  font:
+    size: 24px
+    weight: 400
+  border-radius: 30px
+  cursor: pointer
+  transform: translate3d(0, 0, 0)
+  box-shadow: 0 10px 25px rgba(#000, 0)
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.5s ease, color 0.2s ease, border-radius 0.2s ease
+  transition-delay: 0, 1s, 0, 0, 0
+  &, &:hover, &:focus
+    border: none
+    text-decoration: none
+  &:hover
+    color: #fff
+    background-color: lighten($vk-brand-blue, 10%)
+    box-shadow: 0 10px 35px rgba($vk-brand-blue, 0.5)
+  @media screen and (max-width: $screen-xs)
+    width: 100%
+    max-width: 100%
+    font-size: 20px
+    padding:
+      left: 24px
+      right: 24px
+
+.form__control
+  @extend .form-control
+  padding: 33px 36px 27px 26px
+  margin-right: 41px*0.5
+  font:
+    size: 24px
+    weight: 400
+  border-radius: 30px
+  border: none
+  box-shadow: none
+  transition: background 0.3s ease, box-shadow 0.5s ease, color 0.2s ease, border-radius 0.2s ease, opacity 0.2s ease
+  transition-delay: 0, 0, 0, 0
+  +placeholder($c-gray)
+  &, &:hover, &:focus
+    outline: none
+    appearance: none
+  &:focus
+    opacity: 1
+    box-shadow: none
+  @media screen and (max-width: $screen-xs-max)
+    display: block
+    width: 100%
+    padding: 28px 36px 22px 26px
+    font-size: 16px
+  @media screen and (min-width: 734px)
+    min-width: 374px
+
+.form__control--outline
+  @extend .form__control
+  border: 1px solid $c-gray
+  opacity: 0.5
+  &:focus
+    opacity: 1
+    border-color: $vk-brand-blue
+  @media screen and (max-width: $screen-xs-max)
+    border: 1px solid $c-gray-lighter
+
+.form__submit-btn
+  @extend .btn-primary--rounded
+  @media screen and (max-width: $screen-xs-max)
+    display: block
+    width: 100%
+    max-width: 100%
+    font:
+      size: 16px
+      weight: 600

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="156px" viewBox="0 0 1440 156" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>assets/screens-curve</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="current" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="assets/screens-curve">
+            <rect id="Rectangle-5" fill="#FFFFFF" x="0" y="1" width="1440" height="155"></rect>
+            <path d="M-4.54747351e-13,0.843199384 L1440,0.843199384 L1440,105.893729 C1306.7557,53.5040294 1190.08903,27.3091795 1090,27.3091795 C939.866457,27.3091795 465.87681,155.843199 326.800513,155.843199 C234.082981,155.843199 125.149477,139.193376 -5.04870979e-29,105.893729 L-4.54747351e-13,0.843199384 Z" id="screens-curve" fill="#F6F8F9"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,195 @@
+.features__container--lg
+  margin-bottom: 100px
+
+.features__container--md
+  margin-bottom: 60px
+
+.features__item
+  margin-bottom: 60px
+
+.features__item--md
+  @media screen and (min-width: $screen-sm-min)
+    margin-bottom: 100px
+
+.features__item--lg
+  @media screen and (min-width: $screen-sm-min)
+    margin-bottom: 170px
+
+.features__item__image
+  display: inline-block
+  max-width: 100%
+  //@media screen and (max-width: $screen-xs-max)
+    margin-bottom: -30px
+  &.features__item__image--chat
+    max-width: 388px
+    @media screen and (max-width: $screen-xs-max)
+      max-width: 100%
+      margin:
+        top: 30px
+        bottom: 50px
+  &.features__item__image--interactivity
+    @media screen and (min-width: $screen-md-min)
+      max-width: 130%
+      margin:
+        left: -15%
+        right: -15%
+  &.features__item__image--contacts
+    @media screen and (min-width: $screen-md-min)
+      margin-bottom: 20%
+  &.features__item__image--stats
+    @media screen and (min-width: $screen-md-min)
+      max-width: 120%
+      margin:
+        left: -10%
+        right: -10%
+        bottom: 10%
+
+.features__item__image--angle
+  display: block
+  @media screen and (min-width: $screen-md-min)
+    margin: -10% -10% 0 -20%
+    max-width: 140%
+  @media screen and (max-width: $screen-xs-max)
+    //margin: 0 -20% -10% -10%
+    //max-width: 120%
+    margin: 0
+    max-width: 100%
+
+//.features__item__image--browser
+  @media screen and (max-width: $screen-xs-max)
+    margin-bottom: -7%
+
+.features__item__image--browser--video
+  width: 100%
+  margin-bottom: 50px
+  max-height: 90vw
+  @media screen and (min-height: 836px) and (min-width: 836px)
+    max-height: 836px
+  @media screen and (min-width: 853px)
+    max-width: 853px
+    margin:
+      left: auto
+      right: auto
+
+.features__item__container
+  display: flex
+  align-items: center
+  justify-content: space-between
+  @media screen and (max-width: $screen-sm-max)
+    display: flex
+    flex-direction: column
+    padding: 0
+    margin: 0
+
+.features__item__content-block
+  flex: 0 1 42%
+  order: 1
+  @media screen and (max-width: $screen-sm-max)
+    flex: 1 0 100%
+    order: 2
+    text-align: center
+  @media screen and (min-width: $screen-md)
+    margin-bottom: 20%
+  &.features__item__content-block--reverse
+    order: 2
+    @media screen and (max-width: $screen-sm-max)
+      order: 2
+
+.features__item__image-block
+  flex: 0 1 50%
+  order: 2
+  @media screen and (max-width: $screen-sm-max)
+    flex: 1 0 100%
+    order: 1
+  &.features__item__image-block--reverse
+    order: 1
+    @media screen and (max-width: $screen-sm-max)
+      order: 1
+
+.features__item__image-block--angle
+  @extend .col-md-6
+  order: 2
+  @media screen and (max-width: $screen-sm-max)
+    order: 1
+
+.features__item__container--wide
+  display: flex
+  flex: 1 0 100%
+  flex-direction: column
+  @media screen and (max-width: $screen-sm-max)
+    display: flex
+    flex-direction: column
+    padding: 0
+    margin: 0
+
+.features__item__content-block--wide
+  flex: 1 0 (10/12)*100%
+  order: 1
+  @media screen and (max-width: $screen-sm-max)
+    order: 2
+  @media screen and (min-width: $screen-md-min)
+    margin-bottom: 60px
+
+.features__item__image-block--wide
+  //@extend .col-md-12
+  //box-shadow: 0 40px 80px rgba($vk-brand-blue, 0.35)
+  //background: $vk-brand-blue
+  flex: 1 1 100%
+  @media screen and (max-width: $screen-sm-max)
+    order: 1
+  &.features__item__image-block--wide--video
+    //position: relative
+    //padding-top: 56.25%
+    //padding-top: 100%
+    display: flex
+    order: 2
+    @media screen and (min-width: $screen-md-min)
+      margin-bottom: 30px
+
+.features__item__btn
+  color: $vk-brand-blue
+  &, &:hover, &:focus
+    text-decoration: none
+  &:hover
+    color: darken($vk-brand-blue, 20%)
+  transition: color 0.2s ease
+
+.features__item__title
+  @extend .screens__title
+  margin:
+    top: 0
+    bottom: 15px
+  max-width: 100%
+  @media screen and (min-width: $screen-sm-min)
+    padding-top: 1.5em
+
+.features__item__text
+  @extend .screens__subtitle
+  margin-bottom: 15px
+
+.features__item__btn__icon
+  display: inline-block
+  width: 20px
+  height: 10px
+  vertical-align: baseline
+  background:
+    repeat: no-repeat
+    size: contain
+    position: center center
+    image: url('../images/chevron-right.svg')
+
+.features__section__title
+  @extend .screens__title
+  @media screen and (max-width: $screen-xs-max)
+    display: block
+    max-width: 100%
+    text-align: center
+
+.features__section__btn
+  @extend .btn-primary--rounded
+  @media screen and (max-width: $screen-xs-max)
+    font:
+      size: 16px
+      weight: 600
+
+

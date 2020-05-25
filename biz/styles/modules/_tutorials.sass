@@ -1,0 +1,49 @@
+.tutorials__list
+  @media screen and (min-width: $screen-md-min)
+    padding-bottom: 50px
+
+.tutorials__container
+  margin-bottom: 75px
+  @media screen and (min-width: $screen-md-min)
+    margin-bottom: 240px
+
+.tutorials__item
+  margin-bottom: 45px
+  @media screen and (min-width: $screen-md-min)
+    padding: 0 $grid-gutter-width/2
+  @media screen and (max-width: $screen-xs-max)
+    text-align: center
+
+.tutorials__item__image__link
+  display: block
+  cursor: pointer
+  transition: opacity 0.2s ease
+  opacity: 1
+  &:hover
+    opacity: 0.8
+    text-decoration: none
+
+.tutorials__item__image
+  display: block
+  height: 144px
+  margin-bottom: 20px
+  border-radius: 16px
+  background:
+    repeat: no-repeat
+    size: cover
+    position: center center
+  @media screen and (max-width: $screen-xs-max)
+    height: 120px
+
+.tutorials__item__text
+  @extend .form__block__text
+  margin-bottom: 20px
+
+
+.tutorials__item__btn
+  @extend .features__item__btn
+  font-size: 20px
+  @media screen and (max-width: $screen-xs-max)
+    font-size: 16px
+    line-height: 22px
+

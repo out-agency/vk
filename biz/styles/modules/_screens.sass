@@ -1,0 +1,83 @@
+.screens__container
+  position: relative
+  padding:
+    top: 53px
+  background: #f6f8f9
+  text-align: center
+  @media screen and (max-width: $screen-xs-max)
+    display: flex
+    flex-direction: column
+
+.screens__curve
+  height: $screens-curve-height
+  background:
+    repeat: no-repeat
+    position: center top
+    size: cover
+    image: url('../images/screens-curve.svg')
+  text-align: center
+  margin:
+    top: -1px
+    bottom: round($screens-curve-height/3)
+  @media screen and (max-width: $screen-xs-max)
+    background-size: auto round($screens-curve-height/1.5)
+    height: round($screens-curve-height/1.5)
+  @media screen and (max-width: $screen-xs)
+    background-size: auto round($screens-curve-height/3)
+    height: round($screens-curve-height/3)
+  @media screen and (min-width: $screen-sm-min)
+    margin-bottom: $screens-curve-height
+
+.screens__content__container
+  @extend %content-container-horizontal
+
+.screens__content__container--text
+  @media screen and (max-width: $screen-xs-max)
+    order: 2
+
+.screens__content
+  flex: 0 1 100%
+  margin-bottom: 70px
+  @media screen and (min-width: 911px)
+    flex: 0 0 911px
+  @media screen and (max-width: $screen-xs-max)
+    margin-bottom: 30px
+    text-align: center
+    padding: 0 16px
+
+.screens__title
+  font:
+    size: 48px
+    weight: bold
+  @media screen and (max-width: $screen-xs-max)
+    display: inline-block
+    font-size: 20px
+    max-width: 210px
+
+.screens__subtitle
+  font:
+    size: 24px
+    weight: 400
+  line-height: (32px/24px)*1em
+  color: #606060
+  @media screen and (max-width: $screen-xs-max)
+    font-size: 16px
+
+.screens__cover__block
+  flex: 0 0 100%
+  @media screen and (min-width: $screen-sm-min)
+    margin-bottom: - $screens-curve-height*1.5
+
+.screens__cover
+  display: block
+  width: 100%
+  height: 596px
+  background:
+    size: contain
+    position: center center
+    repeat: no-repeat
+    image: url('../images/screens.png')
+  @media screen and (max-width: $screen-xs-max)
+    height: 189px
+
+

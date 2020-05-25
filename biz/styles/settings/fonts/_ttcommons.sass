@@ -1,0 +1,11 @@
+// Thin, ExtraLight, Light, Regular, Medium, DemiBold, Bold, Black
+$fonts-ttcommons: (200 'normal' 'Light', 400 'normal' 'Regular', 500 'normal' 'DemiBold')
+
+@each $f in $fonts-ttcommons
+  @font-face
+    font-family: 'TT Commons'
+    src: url("../fonts/TTCommons-#{nth($f, 3)}.ttf")
+    font-weight: nth($f, 1)
+    font-style: nth($f, 2)
+
+

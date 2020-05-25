@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="12px" viewBox="0 0 14 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>assets/icon-heart-red</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop" transform="translate(-386.000000, -9275.000000)" fill="#FF3247">
+            <path d="M387.15303,9281.7717 C386.440077,9281.0534 386,9280.06663 386,9278.97764 C386,9276.78085 387.790861,9275 390,9275 C391.194693,9275 392.267056,9275.52083 393,9276.34661 C393.732944,9275.52083 394.805307,9275 396,9275 C398.209139,9275 400,9276.78085 400,9278.97764 C400,9280.06654 399.559997,9281.05324 398.847151,9281.77152 L398.851171,9281.77389 L398.780134,9281.83748 C398.711452,9281.90352 398.640403,9281.96713 398.567122,9282.02817 L393.01334,9287 L387.456957,9282.04808 C387.371685,9281.97816 387.289385,9281.9048 387.210261,9281.82822 L387.149303,9281.77389 L387.15303,9281.7717 Z" id="assets/icon-heart-red"></path>
+        </g>
+    </g>
+</svg>

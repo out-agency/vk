@@ -1,0 +1,96 @@
+.cards__carousel
+  .slick-slide
+    padding: 0 80px 140px 80px
+    margin: 0 -40px
+    cursor: pointer
+    opacity: 0.8
+    transition: all 0.2s ease
+    @media screen and (max-width: $screen-md-max)
+      padding: 0 14px 40px 14px
+      margin: 0 -7px
+      opacity: 1
+    &.slick-active
+      opacity: 1
+    &:hover
+      opacity: 1
+    &:focus
+      box-shadow: none
+      outline: none
+
+.cards__items-list
+  display: flex
+  flex-direction: row
+  overflow-y: auto
+  scrollbar-width: none
+  scrollbar-color: transparent
+  padding: 0 40px 160px 40px
+  -webkit-overflow-scrolling: touch
+  @media screen and (max-width: $screen-xs-max)
+    padding: 0 7px 40px 7px
+
+.cards__item
+  padding: 50px 60px
+  margin: $grid-gutter-width
+  background-color: #fff
+  border-radius: 16px
+  width: (843px/1440px)*100vw
+  flex: 0 0 (843px/1440px)*100vw
+  box-shadow: 0 80px 80px rgba($vk-brand-blue-shadow, 0.2)
+  color: $text-color-light
+  border: 1px solid $c-gray-lightest
+  @media screen and (min-width: $screen-lg-min)
+    width: 843px
+    flex: 0 0 843px
+  @media screen and (max-width: $screen-xs-max)
+    padding: 15px
+    margin: 7px
+    box-shadow: 0 10px 20px rgba($vk-brand-blue-shadow, 0.2)
+
+.cards__item__content
+  padding-right: $grid-gutter-width
+
+.cards__item__title
+  font:
+    size: 19px
+    weight: 600
+  margin-bottom: 15px
+  color: $text-color
+  @media screen and (max-width: $screen-xs-max)
+    font:
+      size: 20px
+    line-height: 24px
+  @media screen and (max-width: $screen-xs-max)
+    font-size: 16px
+    line-height: 22px
+
+.cards__item__text
+  font:
+    size: 16px
+    weight: 400
+  line-height: 1.5em
+  margin-bottom: 28px
+  @media screen and (max-width: $screen-xs-max)
+    margin-bottom: 30px
+    font:
+      size: 16px
+    line-height: 22px
+
+.cards__item__text--small
+  font:
+    size: 16px
+    weight: 400
+  line-height: 1.5em
+  margin-bottom: 24px
+  @media screen and (max-width: $screen-xs-max)
+    font:
+      size: 12px
+    line-height: 1.3em
+
+.cards__item__text--muted
+  opacity: 0.6
+
+.cards__item__image
+  max-width: 100%
+  margin-bottom: 20px
+  border-radius: 8px
+

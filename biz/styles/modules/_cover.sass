@@ -1,0 +1,84 @@
+.cover__container
+  width: 100%
+  min-height: 714px
+  padding:
+    top: 45px*1.5
+    bottom: $cover-curve-height
+  background:
+    size: cover
+    position: center 68%
+    repeat: no-repeat
+    image: url('../images/cover-bg.jpg')
+  text-align: center
+
+.cover__curve
+  height: $cover-curve-height
+  margin-top: - $cover-curve-height + 2px
+  background:
+    repeat: no-repeat
+    position: center top
+    size: cover
+    image: url('../images/cover-curve.svg')
+  text-align: center
+  @media screen and (max-width: $screen-xs-max)
+    background-size: auto $cover-curve-height/2
+    height: round($cover-curve-height/2) - 1px
+    margin-top: - round($cover-curve-height/2) + 2px
+
+.cover__arrow-btn
+  display: inline-block
+  width: 20px
+  height: 30px
+  background:
+    size: contain
+    position: center center
+    repeat: no-repeat
+    image: url('../images/arrow-down.svg')
+  margin-top: - (30px + 24px + $cover-curve-height)
+
+.cover__content__container
+  @extend %content-container-horizontal
+
+.cover__content
+  flex: 0 1 100%
+  padding: 0 16px
+  color: #fff
+  -webkit-font-smoothing: antialiased
+  @media screen and (min-width: 670px)
+    flex: 0 0 670px
+
+.cover__logo
+  display: inline-block
+  width: 244px
+  height: 52px
+  margin-top: 50px
+  margin-bottom: 70px
+  background:
+    size: contain
+    position: center center
+    repeat: no-repeat
+    image: url('../images/logo_vkfb-white.png')
+  @media screen and (max-width: $screen-xs-max)
+    //width: auto
+    height: 50px
+    margin:
+      bottom: 98px
+
+.cover__title
+  font-size: 64px
+  line-height: 1em
+  @media screen and (max-width: $screen-xs-max)
+    font-size: 26px
+  margin: 0 0 15px 0
+  padding: 0
+
+.cover__subtitle
+  font:
+    size: 24px
+    weight: normal
+  line-height: 1.5em
+  margin-bottom: 30px
+  @media screen and (max-width: $screen-xs-max)
+    font-size: 20px
+
+

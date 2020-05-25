@@ -1,0 +1,58 @@
+$icons-item-width: 284px
+$icons-item-width-xs: 142px
+$icons-item-padding: 63px
+$icons-item-gutter: 30px
+
+.icons__container
+  margin-bottom: 40px
+  @media screen and (min-width: $screen-sm-min)
+    margin-bottom: 230px - 65px
+
+.icons__content
+  margin-left: - $icons-item-padding
+  @media screen and (max-width: $screen-xs-max)
+    margin-left:  -39px
+
+.icons__item
+  height: $icons-item-width
+  padding:
+    top: $icons-item-padding
+    left: $icons-item-width - $icons-item-padding/2
+  background:
+    size: auto $icons-item-width
+    position: left top
+    repeat: no-repeat
+  @media screen and (max-width: $screen-xs-max)
+    position: relative
+    height: $icons-item-width-xs - $icons-item-padding/1.5
+    padding:
+      top: $icons-item-padding/2
+      left: ($icons-item-width - $icons-item-padding/2)/2
+    background: none !important
+    //background:
+      size: auto $icons-item-width/2
+      position: left top
+      repeat: no-repeat
+
+.icons__item__icon--xs
+  display: none
+  @media screen and (max-width: $screen-xs-max)
+    display: block
+    width: $icons-item-width-xs
+    height: $icons-item-width-xs
+    position: absolute
+    top: 0
+    left: 0
+    background:
+      size: 100%
+      position: center center
+      repeat: no-repeat
+
+
+.icons__item__title
+  font:
+    size: 30px
+    weight: 600
+  line-height: 1.2em
+  @media screen and (max-width: $screen-xs-max)
+    font-size: 16px
